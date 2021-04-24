@@ -1,0 +1,367 @@
+/* Common Issuse */
+html,body{
+    font-family: 'Roboto', cursive;
+    margin: 0%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+/* CSS Varables */
+:root{
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color:#141313;
+    --text-color:#777777;
+    --border-color:#201f1f17;
+    --gradient-color: linear-gradient(90deg,#4458dc 0%,#854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118,85,225,0.8);
+    --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+    --roboto:'Roboto' cursive;
+}
+button:focus, button:hover, button:active, .btn.active{
+    outline: 0px !important;
+    box-shadow: none;
+}
+/* Header Navbar Start */
+.navbar-brand{
+    padding: 1rem 0rem;
+}
+.navbar{
+    padding: 0rem 3rem;
+}
+.nav-link{
+    font-size: .9rem;
+    margin:0 .10rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--title-color);
+}
+.active a{
+    background: var(--gradient-color);
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent;
+    background-clip: text;
+}
+ a:hover{
+    background:var(--gradient-color) ;
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent;
+    background-clip: text;
+}
+/* Header Navbar End */
+
+/* =====  Banner Area Start =========*/
+.site-banner{
+    background: url(../img/banner-last.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding:1rem 0;
+}
+.hey{
+    padding-top: 25%;
+    font-weight: bold;
+    font-size: 2rem;
+   
+}
+.Me{
+    padding-top: 18%;
+}
+.hey::after{
+content: "";
+height: 5px;
+width: 8vw;
+background:#854fee;
+display: inline-block;
+margin-left: 3%;
+transform: translateY(-8px);
+}
+.heading{
+    font-size: 4.5rem;
+}
+.Frontend{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.btn{
+    border: 2px solid blueviolet;
+    
+}
+.btn.active{
+    background: linear-gradient(90deg,#4458dc 20%,#854fee 80%);
+    color: white;
+    border: 2px solid blueviolet;
+    
+}
+.btn.active:hover{
+    background:whitesmoke ;
+    color: black;
+    transition:.6s;
+}
+.btn:hover{
+    background: linear-gradient(90deg,#4458dc 20%,#854fee 80%) ;
+    color: white;
+    transition: .3s;
+}
+/* =====  Banner Area End   =========*/
+/* ============ About Area ============ */
+.about-area{
+   padding: 0 3.5rem;
+   overflow: hidden;
+   
+}
+.about-title{
+    margin-top: 2.1rem;
+    
+}
+.about-area .about-title h2 > span{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .8rem;
+    line-height: 3rem;
+}
+.para{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+.download{
+    border: 2px solid red;
+}
+.download:hover{
+    border: 2px solid red;
+    background: linear-gradient(90deg,#F25246 100%,#E07D53 0%) ;
+}
+/*=========== End Area End ============*/
+/* ============ Strat Brand Area ============= */
+
+.brand-area{
+    
+    padding: 5rem 5rem;
+    overflow: hidden;
+}
+.single-brand{
+    padding:3rem 2rem;
+    cursor: pointer;
+    width: 90%;
+}
+.single-brand:hover{
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    filter: brightness(0.15);
+    transition: .8s;
+}
+.years-area{
+    background: url(../img/client-info-bg.png)no-repeat 45px 20px;
+    padding: 3rem 0;
+    padding-left:12rem;
+    width: 40rem;
+    height: 18rem;
+    position: relative;
+    
+}
+.years{
+    color: #854fee;
+    font-size: 7rem;
+    font-weight: bold;
+    
+}
+.ywe{
+   
+    font-size: 1.6rem;
+     
+}
+.h4{
+    font-size: 2rem;
+}
+.purple-mbl{
+    color: #854fee;
+}
+.number{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.call-area{
+    padding-left: 3.5rem;
+}
+@media only screen and (max-width:450px){
+    .years-area{
+        padding-left: 0;
+    }
+    .purple-mbl{
+        margin-left: 3rem;
+        padding: 1rem 0;
+    }
+    .call-area{
+        padding-left: 0rem;
+    }
+}
+/* ============ End Brand Area ============= */
+/* ============ start services area ========== */
+.services-area{
+    overflow: hidden;
+    padding: 2rem 2rem;
+}
+.text-tile{
+    font-weight: bold;
+}
+.service-title{
+    padding: 3rem 5rem;
+}
+.service-title h1{
+    font-size: 2.6rem;
+}
+.serviecs{
+    background: rgba(248,252,253,.973);
+    padding: 1rem 0rem;
+    margin: 2rem 0rem;
+    width: 16rem;
+    transition:box-shadow.7s ease;
+}
+.serviecs:hover{
+    box-shadow:var(--box-shadow);
+    cursor: pointer;
+}
+/* ========= End Services Area ========== */
+
+/* =========== Start gallery-area ====== */
+.gallery-area{
+    overflow: hidden;
+    padding: 4rem 0;
+}
+.gallery-area .button-group button{
+    background:transparent;
+    border:none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 120px;
+    font-weight: bold;
+}
+.button-group button + button{
+    padding-left: 3rem;
+}
+.our-project > .title h4{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 12px;
+}
+.test-popup-link:hover{
+    filter: brightness(1.050);
+    transition: .5s;
+}
+/* =========== End gallery-area ====== */
+/* ======== about us section ========== */
+.about-us{
+    overflow: hidden;
+    padding: 1rem 7rem;
+}
+.client{
+    background:#ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0;
+}
+.client-img{
+    padding:2rem
+}
+.about-client{
+    padding-top: 2rem;
+}
+.about-client h4{
+    font-size: 21px;
+    line-height: 20px;
+}
+.about-client p{
+    font-size: 14px;
+}
+.owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+.owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+width: 12px;
+height: 12px;
+}
+/* ==== about us end ====== */
+/* ======== Subscribe area Start ========= */
+.subscribe-area{
+    overflow: hidden;
+}
+.subscribe{
+    background: url(../img/subscribe-bg.png)no-repeat;
+    padding: 7rem 0;
+   
+}
+.form-control{
+box-sizing: border-box;
+}
+.subscribe-title h4{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    color: whitesmoke;
+}
+.subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+.subscribe form .input-textbox input{
+     width: 400px;
+     padding: 1.5rem 1rem;
+     border: 1px solid whitesmoke;
+     background: transparent;
+     color: white;
+     font-size: 17px;
+     line-height: 20px;
+}
+/* media for subscribe area */
+@media only screen and (max-width:450px){
+.subscribe form .input-textbox input{
+width: 340px;
+margin-left: 10px;
+    }
+}
+.subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+.subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: #000;
+    padding: .7rem 2rem;
+    border: 1px solid black;
+}
+/* media for subscribe area */
+@media only screen and (max-width:450px){
+    .subscribe form .btn-submit button{
+   margin: 20px;
+        }
+    }
+.subscribe form .btn-submit button:hover{
+    border: 1px solid black;
+    transition: .6s;
+}
+/* ======== Subscribe area End ========= */
+/* ======= Footer Area Start =========== */
+.footer-area{
+    padding: 8rem 0;
+    background: url(../img/footer-bg.png)no-repeat;
+    background-size: cover;
+}
+.rr{
+    font-size: 22px;
+}
+.social h5{
+    font-size: 22px;
+    line-height: 30px;
+}
+.social a > i {
+    font-size: 22px;
+    padding: 2rem;
+}
+
+ 
+
+    
+/* ======= Footer Area End =========== */
